@@ -8,7 +8,7 @@ description = "OAI harvester for Rust - more coming soon"
 
 [dependencies]
 bytes = "0.4.11"
-chrono = "0.4.6"
+chrono = { version = "0.4.6", features = ["serde"] }
 failure = "0.1.3"
 futures = "0.1.25"
 reqwest = "0.9.5"
