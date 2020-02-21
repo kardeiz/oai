@@ -34,7 +34,6 @@ pub mod err {
 
     impl std::error::Error for Error {
         fn source(&self) -> Option<&(dyn std::error::Error + 'static)> {
-            use Error::*;
             match self {
                 // Http(ref inner) => Some(inner),
                 // Recognizer(ref inner) => Some(inner),
@@ -1003,7 +1002,9 @@ pub mod list_records {
 //     }
 // }
 
-mod ext {
+pub mod ext {
+
+    pub use roxmltree;
 
     use roxmltree::{ExpandedName, Node};
 
