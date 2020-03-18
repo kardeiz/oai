@@ -60,8 +60,8 @@ use std::sync::Arc;
 
 #[derive(Clone)]
 pub struct Client {
-    pub(crate) inner: Arc<reqwest::Client>,
-    pub(crate) base_url: url::Url
+    pub inner: Arc<reqwest::Client>,
+    pub base_url: url::Url
 }
 
 impl Client {

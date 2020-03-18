@@ -2,7 +2,7 @@
 authors = ["Jacob Brown <kardeiz@gmail.com>"]
 edition = "2018"
 name = "oai"
-version = "0.3.0"
+version = "0.3.1"
 license = "MIT"
 description = "OAI harvester for Rust - more coming soon"
 
