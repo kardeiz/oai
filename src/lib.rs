@@ -24,15 +24,7 @@ pub mod err {
         }
     }
 
-    impl std::error::Error for Error {
-        // fn source(&self) -> Option<&(dyn std::error::Error + 'static)> {
-        //     match self {
-        //         // Http(ref inner) => Some(inner),
-        //         // Recognizer(ref inner) => Some(inner),
-        //         _ => None,
-        //     }
-        // }
-    }
+    impl std::error::Error for Error {}
 
     pub fn invalid_argument<T: Display>(t: T) -> Error {
         Error::InvalidArgument(t.to_string())
